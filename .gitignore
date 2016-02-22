@@ -4,3 +4,4 @@ node_modules
 start.cmd
 start.sh
 config.json
+indev.coffee

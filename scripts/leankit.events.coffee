@@ -40,11 +40,6 @@ sendCardMovedEvent = (robot, event) ->
                 "short": true
               },
               {
-                "title": "Ticket Id",
-                "value": event.message.card.ExternalCardIdPrefix + " " + event.message.card.ExternalCardID,
-                "short": true
-              },
-              {
                 "title": "Event At",
                 "value": eventAt,
                 "short": true

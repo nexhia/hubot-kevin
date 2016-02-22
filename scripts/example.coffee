@@ -1,13 +1,3 @@
-# Description:
-#   Example scripts for you to examine and try out.
-#
-# Notes:
-#   They are commented out by default, because most of them are pretty silly and
-#   wouldn't be useful and amusing enough for day to day huboting.
-#   Uncomment the ones you want to try and experiment with.
-#
-#   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
-
 module.exports = (robot) ->
   
   robot.hear /bacon/i, (res) ->  
@@ -16,7 +6,7 @@ module.exports = (robot) ->
   robot.hear /pizza/i, (res) ->  
     res.send "*OMNOMNOMNOM*"  
 
-  robot.hear /idiot/i, (res) ->  
+  robot.hear /idiot|silly kevin/i, (res) ->  
     res.send ":cry:"   
 
   robot.hear /meat pie/i, (res) ->  
@@ -25,11 +15,8 @@ module.exports = (robot) ->
   robot.hear /thanks kevin|thanks @kevin/i, (res) ->  
     res.send "You're welcome :simple_smile:" 
 
-  robot.hear /You're amazing kevin/i, (res) ->  
+  robot.hear /amazing kevin/i, (res) ->  
     res.send "I know :simple_smile:" 
-
-  robot.hear /youre amazing kevin/i, (res) ->  
-    res.send "I know :simple_smile:"  
 
   robot.hear /#nerdlife/i, (res) ->  
     res.send "https://img.printfection.com/9/14433079/ltwdr.jpg"    
@@ -42,8 +29,45 @@ module.exports = (robot) ->
   robot.respond /hello/i, (res) ->
     res.reply res.random greeting
 
+
+  joeback = [
+   "http://36.media.tumblr.com/cce123d9f865282a504f68aacba56a2a/tumblr_o0jf3yHxFs1ujvkoro1_1280.png",
+   "http://36.media.tumblr.com/47decbd73f487bcfc0f0aacd092f55b1/tumblr_nwmkwsmQ961ujvkoro1_1280.jpg",
+   "http://40.media.tumblr.com/404ecaafb64455fefeb1a49ce70eaa28/tumblr_nwfe2pyDt41ujvkoro1_500.jpg",
+   "http://36.media.tumblr.com/a91a64eb83d7ffca159939262c3ed6b3/tumblr_nwfe2dwfaE1ujvkoro1_1280.jpg",
+   "http://36.media.tumblr.com/fd1693dd45d03357763b82a831630622/tumblr_nwfe1uD0Zc1ujvkoro1_1280.jpg",
+   "http://40.media.tumblr.com/c49bede92cab0e079eb8a1c8cd990397/tumblr_nwfe0xzb6s1ujvkoro1_1280.jpg",
+   "http://40.media.tumblr.com/9002687a1356347d4c707e9fdd8b1921/tumblr_nwfe03Qcbp1ujvkoro1_1280.png",
+   "http://41.media.tumblr.com/c469afed016dabcee76ded301807ddd0/tumblr_nwfdziL8gL1ujvkoro1_1280.png",
+   "http://41.media.tumblr.com/28b79c871aa626b4b132b4d3ccdf1046/tumblr_nwfdyjnMgq1ujvkoro1_1280.png",
+   "http://41.media.tumblr.com/fdebc98331edf43167881a75ff434fa2/tumblr_nwfdy8T9bW1ujvkoro1_1280.jpg",
+   "http://41.media.tumblr.com/9ea25586feed16dab8023ac764caf15a/tumblr_nwfdxpq6qW1ujvkoro1_1280.jpg",
+   "http://41.media.tumblr.com/f495bafe932913f66b84b0c31bbad9ad/tumblr_nwfdx0KE2S1ujvkoro1_1280.jpg",
+   "http://36.media.tumblr.com/6f97cc206c7d928e06c7a8b34335cfc4/tumblr_nwfdwndEvp1ujvkoro1_1280.png",
+   "http://41.media.tumblr.com/ec597cee74b7c53b0c1d4a7a21c9d4cb/tumblr_nwfdpyZvpv1ujvkoro1_1280.png",
+   "http://41.media.tumblr.com/ec597cee74b7c53b0c1d4a7a21c9d4cb/tumblr_nwfdpyZvpv1ujvkoro1_1280.png",
+   "http://41.media.tumblr.com/ee4d3185faab8e4befc3762bcc3db64b/tumblr_nwfdow1rO41ujvkoro1_1280.jpg",
+   "http://40.media.tumblr.com/413a6250d4476806e16d9ada5d7ae2fa/tumblr_nwfdohNrTl1ujvkoro1_1280.jpg",
+   "http://40.media.tumblr.com/47f0cb860848abe38efa188a407755b5/tumblr_nwfdn7HkkR1ujvkoro1_1280.jpg7",
+   "http://41.media.tumblr.com/a036fa416a6153bf7c73cee4c79e2ba7/tumblr_nwfdmuDrHz1ujvkoro1_400.png",
+   "http://41.media.tumblr.com/0a21ab83e141e8b85737e60e71535c40/tumblr_nwfdlmqxZq1ujvkoro1_500.png",
+   "http://36.media.tumblr.com/41a1730fed28c1dd7fa4c8f53015f700/tumblr_nwfdl9HXIk1ujvkoro1_1280.jpg",
+   "http://41.media.tumblr.com/c644f3ffad3bd73ef137dfb3e75b2590/tumblr_nwfdkyKzNC1ujvkoro1_1280.jpg",
+   "http://41.media.tumblr.com/ea3cda4739c469072ff9812cdd1e3696/tumblr_nwfdklFCEg1ujvkoro1_1280.jpg",
+   "http://40.media.tumblr.com/5af3d65dcf990fd12721b7e2d15a20dc/tumblr_nwfdiqJfKa1ujvkoro1_1280.jpg",
+   "http://36.media.tumblr.com/e427df596467f3ae42ffd9a91a5b7cfa/tumblr_nwfdifj1GB1ujvkoro1_1280.jpg",
+   "http://40.media.tumblr.com/fe5b1ea78b2856c7314c58e9318a5292/tumblr_nwfdh1DKkk1ujvkoro1_1280.png",
+   "http://40.media.tumblr.com/668098b10227b467a27eeb02b4c931e8/tumblr_nwfd7stKdT1ujvkoro1_1280.jpg",
+   "http://40.media.tumblr.com/52982623a2b50bf1053058b970af5667/tumblr_nwfd72EyQ61ujvkoro1_1280.jpg",
+   "http://41.media.tumblr.com/3f4318a5ab32bb9c33d8e199409447fb/tumblr_nwfd6pYmH31ujvkoro1_1280.jpg",
+   "http://41.media.tumblr.com/ad38be643c252b8ab17360dbf2cb6e86/tumblr_nwfd6blcDp1ujvkoro1_1280.jpg",
+   "http://36.media.tumblr.com/d9741cf425e00706725e48550f4f49d9/tumblr_nwfd5pcAsd1ujvkoro1_1280.jpg",
+   "http://40.media.tumblr.com/16c839590a8292ca9894563473078a6c/tumblr_nwfd60nqmF1ujvkoro1_250.jpg",
+   "http://41.media.tumblr.com/0b2883be5aecf0bf87e8b9dcc908aabb/tumblr_nwfd5df5om1ujvkoro1_1280.jpg"
+  ]  
+
   robot.hear /joeback/i, (res) ->  
-     res.send "http://40.media.tumblr.com/404ecaafb64455fefeb1a49ce70eaa28/tumblr_nwfe2pyDt41ujvkoro1_500.jpg" 
+     res.send res.random joeback 
 
   images = [
    "http://s3.amazonaws.com/kym-assets/photos/images/original/000/114/151/14185212UtNF3Va6.gif?1302832919",
@@ -68,6 +92,14 @@ module.exports = (robot) ->
 
   robot.hear /like a boss/i, (msg) ->
     msg.send msg.random images   
+
+# Proces shutdwon - box is configured to restart the process when it's killed
+
+  robot.hear /Kevin reboot/, (res) -> 
+-    res.send "Rebooting... I'll be back..."
+      setTimeout () ->
+        process.exit 0
+      , 2000  
      
 
   #

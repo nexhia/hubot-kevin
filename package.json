@@ -6,7 +6,6 @@
   "description": "Hi, I'm Kevin",
   "dependencies": {
     "amqp": "^0.2.4",
-    "hubot-browserstack": "^0.1.6",
     "bluebird": "^3.1.4",
     "hubot": "^2.18.0",
     "hubot-diagnostics": "0.0.1",

@@ -1,3 +1,21 @@
+# Description
+#   Set countdown date and retreive countdown (number of days remaining).
+#
+# Dependencies:
+#   None
+#
+# Configuration:
+#   None
+#
+# Commands:
+#   - countdown set event mm-dd-yyyy
+#
+# Notes:
+#   None
+#
+# Author:
+#   AJ
+
 module.exports = (robot) ->
 
   # Get countdown message
