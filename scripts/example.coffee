@@ -100,6 +100,23 @@ module.exports = (robot) ->
     setTimeout () ->
     process.exit 0
     , 2000  
+
+  iancat = [
+      "http://cosmenet.in.th.s3.amazonaws.com/upload/medialibrary/aa0/koyuki-1.jpg",
+    "http://kitties.love/wp-content/uploads/2016/02/japanese-grumpy-cat-angry-koyuki-moflicious-41-400x282.jpg",
+    "http://pbs.twimg.com/media/CbpW1mRW8AAD_0a.jpg",
+    "http://uploads.neatorama.com/images/posts/328/88/88328/1455495082-0.jpg",
+    "https://s-media-cache-ak0.pinimg.com/736x/4f/79/35/4f7935d7f8fcb331cd6bbaee00b9520f.jpg",
+    "http://41.media.tumblr.com/22227113834ed27d2a7c01b497951744/tumblr_nwmfepQavs1sv83imo3_540.jpg",
+    "http://40.media.tumblr.com/0a3f70877b5f673c0242c4d5c548fad1/tumblr_nwmfepQavs1sv83imo1_1280.jpg",
+    "http://i.dailymail.co.uk/i/pix/2016/02/22/00/316F045300000578-3457587-image-a-1_1456099426070.jpg",
+    "https://metrouk2.files.wordpress.com/2016/02/koyuki-the-cat-is-not-impressed-with-your-life-choices.jpg",
+    "http://cdn.someecards.com/posts/koyuki-the-cat-mDN.jpg",
+    "http://static.boredpanda.com/blog/wp-content/uploads/2016/02/japanese-grumpy-cat-angry-koyuki-moflicious-3.jpg"
+  ]  
+
+  robot.hear /iancat/, (res) ->
+    res.send res.random iancat  
      
 
   #
