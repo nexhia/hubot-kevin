@@ -5,6 +5,7 @@
   "author": "Aj",
   "description": "Hi, I'm Kevin",
   "dependencies": {
+    "cheerio": "0.20.0",
     "amqp": "^0.2.4",
     "bluebird": "^3.1.4",
     "hubot": "^2.18.0",
