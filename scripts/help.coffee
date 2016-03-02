@@ -31,7 +31,7 @@ module.exports = (robot) ->
 - !ping URL/IP - return status code.\n
 - http status - status description.\n
 - _kevin stress URL (performance testing via kevin - in development)_\n
-- _kevin stress results_\n"
-- quote - picks out a film quote.\n
+- _kevin stress results_\n
+- quote - picks out a film quote.\n"
 
 
