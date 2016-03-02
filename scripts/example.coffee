@@ -69,6 +69,27 @@ module.exports = (robot) ->
   robot.hear /joeback/i, (res) ->  
      res.send res.random joeback 
 
+  filmQuote = [
+   "But then I realised maybe that's what hell is: the entire rest of eternity spent in f*****g Bruges. And I really really hoped I wouldn't die.", #In Bruges
+   "Did you think I'd be too stupid to know what a eugoogly is?", #Zoolander
+   "Enough is enough! I have had it with these motherf*****g snakes on this motherf*****g plane!", #Snakes on a plane
+   "Get busy living, or get busy dying.", #The Shawshank Redemption
+   "Go ahead, make my day.", #Sudden Impact
+   "Hope. It is the only thing stronger than fear. A little hope is effective. A lot of hope is dangerous. A spark is fine, as long as it's contained.", #The Hunger Games
+   "How do you like them apples?", #Good Will Hunting
+   "I like the tuna here.", #Fast and Furious
+   "I'm gonna make him an offer he can't refuse.", #The Godfather
+   "Just keep swimming.", #Finding Nemo
+   "Oh my gosh, look at that fluffy unicorn! He's so fluffy, I'm gonna die!", #Dispicable Me
+   "We're on a mission from god.", #Blues Brothers
+   "Gentlemen, you can't fight in here! This is a war room!", #Dr Strangelove
+   "Marriage is like a tense, unfunny episode of 'Everybody loves Raymond'...only it doesnt last 22 minutes, it lasts forever!", #Knocked Up
+   "He's not the Messiah. He's a very naughty boy!" #Life Of Brian
+  ]  
+
+  robot.hear /quote/i, (res) ->  
+     res.send res.random filmQuote 
+
   images = [
    "http://s3.amazonaws.com/kym-assets/photos/images/original/000/114/151/14185212UtNF3Va6.gif?1302832919",
   "http://s3.amazonaws.com/kym-assets/photos/images/newsfeed/000/110/885/boss.jpg",

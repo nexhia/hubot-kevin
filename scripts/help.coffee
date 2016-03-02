@@ -32,5 +32,6 @@ module.exports = (robot) ->
 - http status - status description.\n
 - _kevin stress URL (performance testing via kevin - in development)_\n
 - _kevin stress results_\n"
+- quote - picks out a film quote.\n
 
 
