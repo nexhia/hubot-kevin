@@ -201,6 +201,12 @@ compliments = [
     "You're the best at making cereal.",
     "Your parents aren't worried about you.",
     "You're funny. Like, LOL style.",
+    "If cartoon bluebirds were real, a bunch of them would be sitting on your shoulders singing right now.",
+    "Your ability to recall random factoids at just the right time is impressive.",
+    "You're smarter than Google and Mary Poppins combined!",
+    "If, for some reason, our airplane was experiencing problems, I would help you with your oxygen mask before adjusting mine. And that's against aviation rules!",
+    "Your confidence is so impressive, you could walk into Mordor and everyone would be like, 'Yep, that makes sense'.",
+    "You are not someone I pretend to not see in public"
   ]
 
 module.exports = (robot) ->
