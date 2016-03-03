@@ -16,6 +16,7 @@
 
 insults = [
    "May the chocolate chips in your cookies always turn out to be raisins.",
+  "The best part of you dried on your mother's thigh",
   "http://i.imgur.com/cHEjVSs.gifv",
   "Do you whistle before deciding which end to place on the toilet, as your head and your ass speak the same language!",
   "Most people have opinions and arseholes. You on the other hand, just an arsehole",
