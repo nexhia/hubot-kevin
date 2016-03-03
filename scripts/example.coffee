@@ -122,8 +122,8 @@ module.exports = (robot) ->
   robot.hear /Kevin reboot/, (res) -> 
     res.send "Rebooting... I'll be back..."
     setTimeout () ->
-    process.exit 0
-    , 2000  
+      process.exit 0
+      , 2000  
 
   iancat = [
       "http://cosmenet.in.th.s3.amazonaws.com/upload/medialibrary/aa0/koyuki-1.jpg",
