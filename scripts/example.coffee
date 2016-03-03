@@ -1,5 +1,8 @@
 module.exports = (robot) ->
   
+  robot.respond /PING$/i, (msg) ->
+    msg.send "HOWDY PARTNER!"
+
   robot.hear /bacon/i, (res) ->  
     res.send ":scream: You no kill Kevin :scream:"
 
