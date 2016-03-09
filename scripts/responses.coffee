@@ -27,11 +27,6 @@ module.exports = (robot) ->
   robot.hear /push/i, (res) ->  
     res.send "https://s-media-cache-ak0.pinimg.com/originals/4e/2e/53/4e2e533434ab4091c3293ec14a9cb8ed.jpg" 
 
-  greeting = ['Hi', 'Hello', 'Yo!', 'Hola!']
-  
-  robot.respond /hello/i, (res) ->
-    res.reply res.random greeting
-
 
   joeback = [
    "http://36.media.tumblr.com/cce123d9f865282a504f68aacba56a2a/tumblr_o0jf3yHxFs1ujvkoro1_1280.png",
@@ -72,6 +67,8 @@ module.exports = (robot) ->
   robot.hear /joeback/i, (res) ->  
      res.send res.random joeback 
 
+
+
   filmQuote = [
    "But then I realised maybe that's what hell is: the entire rest of eternity spent in f*****g Bruges. And I really really hoped I wouldn't die.", #In Bruges
    "Did you think I'd be too stupid to know what a eugoogly is?", #Zoolander
@@ -93,11 +90,12 @@ module.exports = (robot) ->
   robot.hear /quote/i, (res) ->  
      res.send res.random filmQuote 
 
+
+
   images = [
    "http://s3.amazonaws.com/kym-assets/photos/images/original/000/114/151/14185212UtNF3Va6.gif?1302832919",
   "http://s3.amazonaws.com/kym-assets/photos/images/newsfeed/000/110/885/boss.jpg",
   "http://assets.head-fi.org/b/b3/b3ba6b88_funny-facebook-fails-like-a-boss3.jpg",
-  "http://www.demotivers.com/uploads/2011_02/02/7733_1292_500_Like-A-Boss.jpg",
   "http://images.cheezburger.com/completestore/2011/2/20/a4ea536d-4b21-4517-b498-a3491437d224.jpg",
   "http://funcorner.eu/wp-content/uploads/2011/03/like_a_boss.jpg",
   "https://i.chzbgr.com/maxW500/6972126976/hAA5A99AF/",
@@ -117,13 +115,7 @@ module.exports = (robot) ->
   robot.hear /like a boss/i, (msg) ->
     msg.send msg.random images   
 
-# Proces shutdwon - box is configured to restart the process when it's killed
 
-  robot.hear /Kevin reboot/, (res) -> 
-    res.send "Rebooting... I'll be back..."
-    setTimeout () ->
-      process.exit 0
-      , 2000  
 
   iancat = [
       "http://cosmenet.in.th.s3.amazonaws.com/upload/medialibrary/aa0/koyuki-1.jpg",
@@ -141,91 +133,13 @@ module.exports = (robot) ->
 
   robot.hear /iancat/, (res) ->
     res.send res.random iancat  
-     
 
-  #
-  # robot.respond /open the (.*) doors/i, (res) ->
-  #   doorType = res.match[1]
-  #   if doorType is "pod bay"
-  #     res.reply "I'm afraid I can't let you do that."
-  #   else
-  #     res.reply "Opening #{doorType} doors"
-  #
-  # robot.hear /I like pie/i, (res) ->
-  #   res.emote "makes a freshly baked pie"
-  #
-  # lulz = ['lol', 'rofl', 'lmao']
-  #
-  # robot.respond /lulz/i, (res) ->
-  #   res.send res.random lulz
-  #
-  # robot.topic (res) ->
-  #   res.send "#{res.message.text}? That's a Paddlin'"
-  #
-  #
 
-  #
-  # answer = process.env.HUBOT_ANSWER_TO_THE_ULTIMATE_QUESTION_OF_LIFE_THE_UNIVERSE_AND_EVERYTHING
-  #
-  # robot.respond /what is the answer to the ultimate question of life/, (res) ->
-  #   unless answer?
-  #     res.send "Missing HUBOT_ANSWER_TO_THE_ULTIMATE_QUESTION_OF_LIFE_THE_UNIVERSE_AND_EVERYTHING in environment: please set and try again"
-  #     return
-  #   res.send "#{answer}, but what is the question?"
-  #
-  # robot.respond /you are a little slow/, (res) ->
-  #   setTimeout () ->
-  #     res.send "Who you calling 'slow'?"
-  #   , 60 * 1000
-  #
-  # annoyIntervalId = null
-  #
-  # robot.respond /annoy me/, (res) ->
-  #   if annoyIntervalId
-  #     res.send "AAAAAAAAAAAEEEEEEEEEEEEEEEEEEEEEEEEIIIIIIIIHHHHHHHHHH"
-  #     return
-  #
-  #   res.send "Hey, want to hear the most annoying sound in the world?"
-  #   annoyIntervalId = setInterval () ->
-  #     res.send "AAAAAAAAAAAEEEEEEEEEEEEEEEEEEEEEEEEIIIIIIIIHHHHHHHHHH"
-  #   , 1000
-  #
-  # robot.respond /unannoy me/, (res) ->
-  #   if annoyIntervalId
-  #     res.send "GUYS, GUYS, GUYS!"
-  #     clearInterval(annoyIntervalId)
-  #     annoyIntervalId = null
-  #   else
-  #     res.send "Not annoying you right now, am I?"
-  #
-  #
-  # robot.router.post '/hubot/chatsecrets/:room', (req, res) ->
-  #   room   = req.params.room
-  #   data   = JSON.parse req.body.payload
-  #   secret = data.secret
-  #
-  #   robot.messageRoom room, "I have a secret: #{secret}"
-  #
-  #   res.send 'OK'
-  #
-  # robot.error (err, res) ->
-  #   robot.logger.error "DOES NOT COMPUTE"
-  #
-  #   if res?
-  #     res.reply "DOES NOT COMPUTE"
-  #
-  # robot.respond /have a soda/i, (res) ->
-  #   # Get number of sodas had (coerced to a number).
-  #   sodasHad = robot.brain.get('totalSodas') * 1 or 0
-  #
-  #   if sodasHad > 4
-  #     res.reply "I'm too fizzy.."
-  #
-  #   else
-  #     res.reply 'Sure!'
-  #
-  #     robot.brain.set 'totalSodas', sodasHad+1
-  #
-  # robot.respond /sleep it off/i, (res) ->
-  #   robot.brain.set 'totalSodas', 0
-  #   res.reply 'zzzzz'
+
+# Proces shutdwon - box is configured to restart the process when it's killed
+
+  robot.hear /Kevin reboot/, (res) -> 
+    res.send "Rebooting... I'll be back..."
+    setTimeout () ->
+      process.exit 0
+      , 2000  
