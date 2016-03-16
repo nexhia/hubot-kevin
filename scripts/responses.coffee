@@ -27,6 +27,9 @@ module.exports = (robot) ->
   robot.hear /push/i, (res) ->  
     res.send "https://s-media-cache-ak0.pinimg.com/originals/4e/2e/53/4e2e533434ab4091c3293ec14a9cb8ed.jpg" 
 
+  robot.hear /marketing|SEO/i, (res) ->  
+    res.send "http://imgfave-herokuapp-com.global.ssl.fastly.net/image_cache/1373283574468482.jpg" 
+
 
   joeback = [
    "http://36.media.tumblr.com/cce123d9f865282a504f68aacba56a2a/tumblr_o0jf3yHxFs1ujvkoro1_1280.png",
@@ -46,7 +49,6 @@ module.exports = (robot) ->
    "http://41.media.tumblr.com/ec597cee74b7c53b0c1d4a7a21c9d4cb/tumblr_nwfdpyZvpv1ujvkoro1_1280.png",
    "http://41.media.tumblr.com/ee4d3185faab8e4befc3762bcc3db64b/tumblr_nwfdow1rO41ujvkoro1_1280.jpg",
    "http://40.media.tumblr.com/413a6250d4476806e16d9ada5d7ae2fa/tumblr_nwfdohNrTl1ujvkoro1_1280.jpg",
-   "http://40.media.tumblr.com/47f0cb860848abe38efa188a407755b5/tumblr_nwfdn7HkkR1ujvkoro1_1280.jpg7",
    "http://41.media.tumblr.com/a036fa416a6153bf7c73cee4c79e2ba7/tumblr_nwfdmuDrHz1ujvkoro1_400.png",
    "http://41.media.tumblr.com/0a21ab83e141e8b85737e60e71535c40/tumblr_nwfdlmqxZq1ujvkoro1_500.png",
    "http://36.media.tumblr.com/41a1730fed28c1dd7fa4c8f53015f700/tumblr_nwfdl9HXIk1ujvkoro1_1280.jpg",
