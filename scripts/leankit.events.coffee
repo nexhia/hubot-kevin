@@ -32,7 +32,7 @@ sendCardMovedEvent = (robot, event) ->
             title: "Card moved into QA WIP",
             fallback: "Card moved into QA WIP",
             text: event.message.boardEvent.Message,
-            color: "#BF5FFF",
+            color: "#00B159",
             fields: [
               {
                 "title": "Board name",

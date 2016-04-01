@@ -30,6 +30,9 @@ module.exports = (robot) ->
   robot.hear /marketing|SEO/i, (res) ->  
     res.send "http://imgfave-herokuapp-com.global.ssl.fastly.net/image_cache/1373283574468482.jpg" 
 
+  robot.hear /shit o'clock|shit o-clock|shit oclock/i, (res) ->
+    res.send "http://cdn.someecards.com/someecards/usercards/1335298036781_3013300.png" 
+
 
   joeback = [
    "http://36.media.tumblr.com/cce123d9f865282a504f68aacba56a2a/tumblr_o0jf3yHxFs1ujvkoro1_1280.png",
