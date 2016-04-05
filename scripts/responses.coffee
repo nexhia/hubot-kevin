@@ -33,6 +33,9 @@ module.exports = (robot) ->
   robot.hear /shit o'clock|shit o-clock|shit oclock/i, (res) ->
     res.send "http://cdn.someecards.com/someecards/usercards/1335298036781_3013300.png" 
 
+  robot.respond /TIME$/i, (msg) ->
+    msg.send "Server time is: #{new Date()}"  
+
 
   joeback = [
    "http://36.media.tumblr.com/cce123d9f865282a504f68aacba56a2a/tumblr_o0jf3yHxFs1ujvkoro1_1280.png",
