@@ -21,6 +21,13 @@ sendCardMovedEvent = (robot, event) ->
   if settings.kevin.laneIds.indexOf(event.message.boardEvent.ToLaneId) == -1
     return
 
+  attachmentColour = "#bcbcbc"
+
+  if settings.kevin.laneColours[event.message.boardEvent.ToLaneId.toString()] == undefined
+    attachmentColour = settings.kevin.laneColours.default
+  else
+    attachmentColour = settings.kevin.laneColours[event.message.boardEvent.ToLaneId.toString()]
+  console.log("the colour was", attachmentColour)
   console.log(new Date(), "Message sent for card", event.message.card.ExternalCardIdPrefix + " " + event.message.card.ExternalCardID)
   
   eventAt = moment(event.message.boardEvent.EventDateTime).format('HH:mm:ss')
@@ -29,22 +36,11 @@ sendCardMovedEvent = (robot, event) ->
         channel: settings.kevin.channel,
         attachments: [
           {
-            title: "Card moved into QA WIP",
-            fallback: "Card moved into QA WIP",
+            title: "Card moved into QA on board " + event.message.card.BoardTitle,
+            fallback: "",
             text: event.message.boardEvent.Message,
-            color: "#00B159",
-            fields: [
-              {
-                "title": "Board name",
-                "value": event.message.card.BoardTitle,
-                "short": true
-              },
-              {
-                "title": "Event At",
-                "value": eventAt,
-                "short": true
-              }
-            ]
+            color: attachmentColour,
+
           }
         ]
       }
