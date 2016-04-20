@@ -142,6 +142,9 @@ module.exports = (robot) ->
   robot.hear /iancat/, (res) ->
     res.send res.random iancat  
 
+  robot.hear /leankit/i, (res) ->
+    res.send ":f5: :f5: :f5: :f5: :f5: :f5: :f5: :f5: :f5: :f5: :f5: :f5: :f5: :f5: :f5: :f5:" 
+
 
 
 # Proces shutdwon - box is configured to restart the process when it's killed
