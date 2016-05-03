@@ -36,6 +36,9 @@ module.exports = (robot) ->
   robot.respond /TIME$/i, (msg) ->
     msg.send "Server time is: #{new Date()}"  
 
+  robot.hear /sbone/i, (msg) ->
+    msg.send "http://remodelingclay.com/wp-content/uploads/2013/08/f5-key-refresh-addiction.jpg"  
+
 
   joeback = [
    "http://36.media.tumblr.com/cce123d9f865282a504f68aacba56a2a/tumblr_o0jf3yHxFs1ujvkoro1_1280.png",
