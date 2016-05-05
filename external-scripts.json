@@ -1,7 +1,7 @@
 [
-  "hubot-diagnostics",
   "hubot-google-images",
   "hubot-swanson",
+  "hubot-browserstack",
   "hubot-remind-her",
   "hubot-redis-brain"
 ]
