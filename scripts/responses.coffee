@@ -37,7 +37,10 @@ module.exports = (robot) ->
     msg.send "Server time is: #{new Date()}"  
 
   robot.hear /sbone/i, (msg) ->
-    msg.send "http://remodelingclay.com/wp-content/uploads/2013/08/f5-key-refresh-addiction.jpg"  
+    msg.send "http://remodelingclay.com/wp-content/uploads/2013/08/f5-key-refresh-addiction.jpg" 
+
+  robot.hear /cug/i, (res) ->  
+    res.send "https://cdn.meme.am/instances/52905340.jpg" 
 
 
   joeback = [
