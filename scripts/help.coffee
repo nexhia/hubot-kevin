@@ -21,6 +21,8 @@ module.exports = (robot) ->
 *Hi! I'm Kevin, I work hard with leankit API to provide updates on moving cards for testers.*​\n
 - countdown set event mm-dd-yyyy\n 
 - kevin remind me _time_ to _task_\n
+- (dm) announce \"text\" - broadcasts an announcement on all channels\n
+- (dm) announce downtime for \"product\" starting time\n
 - kevin insult - tasteful insult.\n
 - kevin compliment - weird compliment to counter insult.\n
 - kevin swanson me - Swanson quote.\n
