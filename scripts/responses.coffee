@@ -24,12 +24,6 @@ module.exports = (robot) ->
   robot.hear /#nerdlife/i, (res) ->  
     res.send "https://img.printfection.com/9/14433079/ltwdr.jpg"    
 
-  robot.hear /push/i, (res) ->  
-    res.send "https://s-media-cache-ak0.pinimg.com/originals/4e/2e/53/4e2e533434ab4091c3293ec14a9cb8ed.jpg" 
-
-  robot.hear /marketing|SEO/i, (res) ->  
-    res.send "http://imgfave-herokuapp-com.global.ssl.fastly.net/image_cache/1373283574468482.jpg" 
-
   robot.hear /shit o'clock|shit o-clock|shit oclock/i, (res) ->
     res.send "http://cdn.someecards.com/someecards/usercards/1335298036781_3013300.png" 
 
