@@ -19,6 +19,7 @@ module.exports = (robot) ->
   robot.hear /kevin help/i, (res) ->  
     res.send "
 *Hi! I'm Kevin, I work hard with leankit API to provide updates on moving cards for testers.*​\n
+
 - countdown set event mm-dd-yyyy\n 
 - kevin remind me _time_ to _task_\n
 - (dm) announce \"text\" - broadcasts an announcement on all channels\n
@@ -29,5 +30,6 @@ module.exports = (robot) ->
 - http status - status description.\n
 - quote - film quote.\n
 - randoms: _joeback, iancat, like a boss_"
+
 
 

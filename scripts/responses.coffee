@@ -33,10 +33,6 @@ module.exports = (robot) ->
   robot.hear /sbone/i, (msg) ->
     msg.send "http://remodelingclay.com/wp-content/uploads/2013/08/f5-key-refresh-addiction.jpg" 
 
-  robot.hear /cug/i, (res) ->  
-    res.send "https://cdn.meme.am/instances/52905340.jpg" 
-
-
   joeback = [
    "http://36.media.tumblr.com/cce123d9f865282a504f68aacba56a2a/tumblr_o0jf3yHxFs1ujvkoro1_1280.png",
    "http://36.media.tumblr.com/47decbd73f487bcfc0f0aacd092f55b1/tumblr_nwmkwsmQ961ujvkoro1_1280.jpg",
