@@ -27,7 +27,7 @@ module.exports = (robot) ->
 - kevin compliment - weird compliment to counter insult.\n
 - kevin swanson me - Swanson quote.\n
 - http status - status description.\n
-- quote - film quote.\n
+- screenshot me - generate screenshots on current browsers.\n
 - randoms: _joeback, iancat, like a boss_"
 
 

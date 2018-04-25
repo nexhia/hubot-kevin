@@ -124,7 +124,6 @@ insults = [
   "http://cdn.emgn.com/wp-content/uploads/2015/01/Rude-Animal-Facts-EMGN4.png",
   "http://cdn.emgn.com/wp-content/uploads/2015/01/Rude-Animal-Facts-EMGN5.png",
   "http://cdn.emgn.com/wp-content/uploads/2015/01/Rude-Animal-Facts-EMGN6.jpg",
-  "http://i.imgur.com/dMDdQOI.gif",
   "http://i.imgur.com/4PhyZKv.gif",
   "http://i.imgur.com/6OGiTqc.gif",
   "http://i.imgur.com/WtDpHiL.gif",
