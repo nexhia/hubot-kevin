@@ -1,7 +1,5 @@
 [
   "hubot-google-images",
   "hubot-swanson",
-  "hubot-remind-her",
-  "hubot-spotify-playlist",
-  "hubot-redis-brain"
+  "hubot-remind-her"
 ]
